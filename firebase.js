@@ -1,5 +1,5 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-  import {getFirestore,doc,updateDoc  ,getDocs,addDoc,collection,setDoc,deleteDoc} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"
+  import {getFirestore,query,orderBy,doc,serverTimestamp,updateDoc ,onSnapshot  ,getDocs,addDoc,collection,setDoc,deleteDoc} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"
   const firebaseConfig = {
     apiKey: "AIzaSyCVLnt_OiskQgK2X4liLCmPacdAF3JBSJ8",
     authDomain: "challenge-45d2e.firebaseapp.com",
@@ -22,5 +22,8 @@
     doc,
     deleteDoc,
     getDocs,
-    updateDoc 
+    updateDoc ,
+    onSnapshot ,
+    serverTimestamp,
+    query,orderBy
   }
